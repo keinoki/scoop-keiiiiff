@@ -1,0 +1,34 @@
+{
+    "version": "0.1.19",
+    "description": "Mellow is a rule-based global transparent proxy client for Windows, macOS and Linux",
+    "homepage": "https://github.com/mellow-io/mellow",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mellow-io/mellow/releases/download/v0.1.19/Mellow.Setup.0.1.19.exe#dl.7z",
+            "hash": "bf8e7825f1f275b2f0b327035275808113515a1c3c49305471c9bd37ec2a286d",
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+                ]
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "Mellow.exe",
+            "Mellow"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/mellow-io/mellow",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mellow-io/mellow/releases/download/v$version/Mellow.Setup.$version.exe#dl.7z"
+            }
+        }
+    }
+}
