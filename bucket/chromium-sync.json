@@ -1,12 +1,12 @@
 {
-    "version": "81.0.4044.122",
+    "version": "81.0.4044.129",
     "description": "Browser aiming for safer, faster, and more stable way for all users to experience the web (Hibbiki/chromium-win64)",
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Hibbiki/chromium-win64/releases/download/v81.0.4044.122-r737173/chrome.sync.7z",
-            "hash": "sha1:7adbd8b3f69624ab8764ccdc27e054ba2b963574"
+            "url": "https://github.com/Hibbiki/chromium-win64/releases/download/v81.0.4044.129-r737173/chrome.sync.7z",
+            "hash": "sha1:8151884bbfca24a6849f3e97a9e33f57e16bc3f5"
         }
     },
     "extract_dir": "Chrome-bin",
