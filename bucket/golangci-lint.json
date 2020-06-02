@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/golangci/golangci-lint/releases/download/v1.27.0/golangci-lint-1.27.0-windows-amd64.zip",
-            "extract_dir": "golangci-lint-1.27.0-windows-amd64",
+            "extract_dir": "golangci-lint.exe-1.27.0-windows-amd64",
             "hash": "bf781f05b0d393b4bf0a327d9e62926949a4f14d7774d950c4e009fc766ed1d4"
         }
     },
@@ -18,7 +18,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/golangci/golangci-lint/releases/download/v$version/golangci-lint-$version-windows-amd64.zip",
-                "extract_dir": "golangci-lint-$version-windows-amd64"
+                "extract_dir": "golangci-lint.exe-$version-windows-amd64"
             }
         }
     }
