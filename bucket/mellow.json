@@ -21,8 +21,7 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/mellow-io/mellow",
-        "regex": "v([\\d.]+)"
+        "github": "https://github.com/mellow-io/mellow"
     },
     "autoupdate": {
         "architecture": {
