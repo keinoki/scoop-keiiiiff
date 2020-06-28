@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/TravaOpenJDK/trava-jdk-11-dcevm",
     "description": "dcevm-11 built on Travis",
-    "version": "11.0.7+3",
+    "version": "11.0.7+4",
     "license": "Apache-2.0",
-    "url": "https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases/download/dcevm-11.0.7+3/java11-openjdk-dcevm-windows.zip",
-    "hash": "d3e89fa85066f788d81344d9063229943150f2ddb22c4c77591366398c164345",
-    "extract_dir": "dcevm-11.0.7+3",
+    "url": "https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases/download/dcevm-11.0.7+4/java11-openjdk-dcevm-windows.zip",
+    "hash": "613aca8d85ea25110c49871eaa8139dde5675b33d0cc8a57009d6cfc6b4b1092",
+    "extract_dir": "dcevm-11.0.7+4",
     "env_add_path": "bin",
     "env_set": {
         "JAVA_HOME": "$dir"
