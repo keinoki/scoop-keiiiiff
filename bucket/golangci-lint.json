@@ -1,13 +1,13 @@
 {
     "homepage": "https://github.com/golangci/golangci-lint",
     "description": "Linters Runner for Go. 5x faster than gometalinter",
-    "version": "1.29.0",
+    "version": "1.30.0",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/golangci/golangci-lint/releases/download/v1.29.0/golangci-lint-1.29.0-windows-amd64.zip",
-            "extract_dir": "golangci-lint-1.29.0-windows-amd64",
-            "hash": "57ae58fb06ad8ef758c2f908a6fd6cf1cc2077ff2cfa10116e56d8ea81841b39"
+            "url": "https://github.com/golangci/golangci-lint/releases/download/v1.30.0/golangci-lint-1.30.0-windows-amd64.zip",
+            "extract_dir": "golangci-lint-1.30.0-windows-amd64",
+            "hash": "2f0c6c747f03bf75594bc34969d9f5e919a9becea7d5fa23599f63150a960c2c"
         }
     },
     "checkver": {
