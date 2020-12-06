@@ -12,7 +12,7 @@
     },
     "checkver": {
         "url": "https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases/latest",
-        "re": "Dcevm-([\\d\\.\\+]+)"
+        "re": "[D|d]cevm-([\\d\\.\\+]+)"
     },
     "autoupdate": {
         "url": "https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases/download/dcevm-$version/java11-openjdk-dcevm-windows.zip",
