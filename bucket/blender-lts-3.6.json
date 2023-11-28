@@ -10,11 +10,16 @@
             "extract_dir": "blender-3.6.5-windows-x64"
         }
     },
-    "bin": "blender.exe",
+    "bin": [
+    	[
+    		"blender.exe",
+    		"blender-lts.exe"
+    	]
+    ],
     "shortcuts": [
         [
             "blender.exe",
-            "Blender"
+            "Blender LTS"
         ]
     ],
     "checkver": {
