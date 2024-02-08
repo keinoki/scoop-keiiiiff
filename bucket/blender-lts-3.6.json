@@ -10,18 +10,8 @@
             "extract_dir": "blender-3.6.5-windows-x64"
         }
     },
-    "bin": [
-    	[
-    		"blender.exe",
-    		"blender-lts"
-    	]
-    ],
-    "shortcuts": [
-        [
-            "blender.exe",
-            "Blender LTS"
-        ]
-    ],
+    "bin": [["blender.exe", "blender-lts"]],
+    "shortcuts": [["blender.exe", "Blender LTS"]],
     "checkver": {
         "url": "https://www.blender.org/download/lts/3-6/",
         "regex": "blender-([\\w.]+)-windows-x64\\.zip"
