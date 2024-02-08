@@ -14,7 +14,12 @@
             }
         }
     },
-    "shortcuts": [["Mellow.exe", "Mellow"]],
+    "shortcuts": [
+        [
+            "Mellow.exe",
+            "Mellow"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/mellow-io/mellow"
     },

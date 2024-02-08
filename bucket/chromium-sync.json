@@ -10,8 +10,19 @@
         }
     },
     "extract_dir": "Chrome-bin",
-    "bin": ["chrome.exe", ["chrome.exe", "chromium"]],
-    "shortcuts": [["chrome.exe", "Chromium"]],
+    "bin": [
+        "chrome.exe",
+        [
+            "chrome.exe",
+            "chromium"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "Chromium"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/Hibbiki/chromium-win64",
         "regex": "v([\\d.]+)-r(?<rev>\\d+)"
