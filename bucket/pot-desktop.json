@@ -1,12 +1,12 @@
 {
-    "version": "2.7.9",
+    "version": "2.7.10",
     "description": "A cross-platform software for text translation and recognition.",
     "homepage": "https://github.com/pot-app/pot-desktop",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pot-app/pot-desktop/releases/download/2.7.9/pot_2.7.9_x64-setup.exe#dl.7z",
-            "hash": "25ccaa5e27512cb69d16a034a75b5f81d159c656f55718e8536c481dd58fd545",
+            "url": "https://github.com/pot-app/pot-desktop/releases/download/2.7.10/pot_2.7.10_x64-setup.exe#dl.7z",
+            "hash": "de0329764e9e87ee11a1bba1bc5efd2783bad2970b740cc57b057536f59594cb",
             "installer": {
                 "script": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$TEMP\", \"$dir\\Uninstall*\" -Force -Recurse"
             }
