@@ -21,7 +21,7 @@ if (-not $JqIsReady) {
 
 $checkverScriptLines = Get-Content "$PSScriptRoot/checkver-inner-script.ps1" | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
 
-$PSScriptRoot | Split-Path -Parent | Split-Path -Parent | Join-Path -ChildPath "bucket" | Get-ChildItem -File | 
+$PSScriptRoot | Split-Path -Parent | Split-Path -Parent | Join-Path -ChildPath "bucket" | Get-ChildItem -File |
     Where-Object { $_.Name -match "^blender(-latest|-lts-\d+\.\d+)\.json$" } |
     ForEach-Object {
         $json = $_ | Get-Content | ConvertFrom-Json -AsHashtable

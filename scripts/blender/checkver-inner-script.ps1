@@ -16,8 +16,8 @@ try {
         throw "checkver.url is not defined"
     }
 
-    if ($expected_ver -notmatch '^\d+\.\d+(\.\d+)?$') { 
-        throw "$expected_ver not match X.Y.Z" 
+    if ($expected_ver -notmatch '^\d+\.\d+(\.\d+)?$') {
+        throw "$expected_ver not match X.Y.Z"
     }
 
     $expectedVersion = [version]$expected_ver
@@ -33,7 +33,7 @@ try {
     }
     elseif ($url -eq "https://download.blender.org/release/") {
         ([regex]'<a\s+[^>]*?href="([^"]+)"[^>]*?>(?<Path>Blender(?<Version>\d+\.\d+))/</a>').Matches($page) |
-        ForEach-Object { 
+        ForEach-Object {
             [PSCustomObject]@{
                 Path    = $_.Groups['Path'].Value
                 Version = [version]"$($_.Groups['Version'].Value).0"
@@ -57,7 +57,7 @@ try {
     } else {
         throw "Unsupported checkver.url: $url"
     }
-    $results = $results | Where-Object { $_.Version -ge $expectedVersion } 
+    $results = $results | Where-Object { $_.Version -ge $expectedVersion }
     if ($results.Count -eq 0) {
         throw "No suitable version found >= $expectedVersion"
     }
