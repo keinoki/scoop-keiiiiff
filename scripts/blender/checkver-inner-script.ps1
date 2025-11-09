@@ -61,8 +61,10 @@ try {
     if ($results.Count -eq 0) {
         throw "No suitable version found >= $expectedVersion"
     }
-    $results | Sort-Object -Property Version -Descending | Join-String -Property Name -Separator "`r`n"
+    $results = $results | Sort-Object -Property Version -Descending | Select-Object -ExpandProperty Name
+    $results -join "`r`n"
 }
 catch {
     Write-Error "$app checkver failed: $($_.Exception.Message)"
+    return ""
 }
